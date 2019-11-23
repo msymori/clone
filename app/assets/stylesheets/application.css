@@ -13,3 +13,111 @@
  *= require_tree .
  *= require_self
  */
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 870px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/*---------------------------header---------------------------------*/
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: lightgray;
+}
+
+.header-left {
+  float: left;
+  font-size: 24px;
+  margin-top: 7px;
+}
+
+.header-tag {
+  color: black;
+}
+.header-tag:hover {
+  opacity: 0.4
+}
+
+.header-right {
+  float: right;
+}
+
+nav li{
+  float: left;
+  list-style: none;
+  font-size:20px;
+  margin-left: 30px;
+}
+header nav li {
+  margin-top:10px;
+}
+
+/*---------------------------home---------------------------------*/
+.home-wrapper {
+  margin-top: 150px;
+}
+
+.home-wrapper h1 {
+  font-size:60px;
+  letter-spacing:2px;
+}
+
+.home-wrapper h2 {
+  font-size:30px;
+  letter-spacing: 2px;
+}
+
+.home-wrapper .btn {
+  background-color: lightgray;
+  padding: 10px;
+  color: white;
+  transition: all 1.0s;
+}
+.home-wrapper .btn:hover {
+  color: black;
+  transition: all 1.0s;
+}
+
+/*---------------------------footer---------------------------------*/
+footer {
+  border-top:1px solid black;
+  margin-top: 100px;
+  color: black;
+}
+
+footer small {
+  margin-top: 18px;
+  float:left;
+}
+
+footer li {
+  font-size: 15px;
+  float:right;
+}
+
+
+/*---------------------------footer---------------------------------*/
+
+
