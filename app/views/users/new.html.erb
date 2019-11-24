@@ -5,6 +5,9 @@
   <div class="sign-form">
     <div class="form-group">
       <%= form_for(@user) do |f| %>
+        <div class="error-wrapper">
+          <%= render "shared/error_messages" %>
+        </div>
         <div class="control">
           <p><%= f.label :name, class: "form-label" %></p>
           <%= f.text_field :name, class: "form" %>
@@ -14,8 +17,8 @@
           <%= f.email_field :email, class: "form" %>
         </div>
         <div class="control">
-          <p><%= f.label :passsword, class: "form-label" %></p>
-          <%= f.password_field :passsword, class: "form" %>
+          <p><%= f.label :password, class: "form-label" %></p>
+          <%= f.password_field :password, class: "form" %>
         </div>
         <div class="control">
           <p><%= f.label :password_confirmation, "Confirmation", class: "form-label" %></p>

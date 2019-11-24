@@ -37,6 +37,18 @@ a {
   clear: both;
 }
 
+li {
+  list-style: none;
+}
+
+.alert {
+  margin-top:80px;
+  font-size:20px;
+  padding:10px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  border:1px solid black;
+}
+
 /*---------------------------form-btn---------------------------------*/
 .form-label {
   font-size:20px;
@@ -172,6 +184,12 @@ footer li {
 
 .sign-form {
   margin:30px 0;
+}
+
+/*---------------------------error---------------------------------*/
+.error-wrapper {
+  color:red;
+  
 }
 
 
