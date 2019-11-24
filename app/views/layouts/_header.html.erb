@@ -7,7 +7,16 @@
       <nav>
         <li><%= link_to "Home", root_path, class: "header-tag" %></li>
         <li><%= link_to "Help", help_path, class: "header-tag" %></li>
-        <li><%= link_to "Login", "#", class: "header-tag" %></li>
+        
+        <% if logged_in? %>
+          <li><%= link_to "Users", "#", class: "header-tag" %></li>
+          <li><%= link_to "Profile", user_path(current_user), class: "header-tag" %></li>
+          <li><%= link_to "Settings", "#", class: "header-tag" %></li>
+          <li><%= link_to "Logout", logout_path, method: :delete, class: "header-tag" %></li>
+        <% else %>
+          <li><%= link_to "Login", login_path, class: "header-tag" %></li>
+        <% end %>
+        
       </nav>
     </div>
     <div class="clear"></div>
