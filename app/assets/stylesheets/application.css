@@ -37,6 +37,52 @@ a {
   clear: both;
 }
 
+/*---------------------------form-btn---------------------------------*/
+.form-label {
+  font-size:20px;
+  margin-right: 13px;
+  letter-spacing:2px;
+}
+
+.form {
+  font:20px/24px sans-serif;
+  box-sizing: border-box;
+  transition:0.3s;
+  letter-spacing:1px;
+  border:none;
+  border-bottom:2px solid #1b2538;
+  background:transparent;
+  margin-right:10px;
+  width: 70%;
+}
+
+.form:focus {
+  border-bottom: 2px solid #da3c41;
+  outline: none;
+}
+
+.control {
+  margin:20px 0;
+}
+
+.btn {
+  color:gray;
+  font-size:16px;
+  padding:12px 30px;
+  margin-top:10px;
+  letter-spacing: 2px;
+  font-size:20px;
+  border:1px solid gray;
+  transition:all 1.0s;
+}
+
+.btn:hover {
+  color:white;
+  background-color:gray;
+  transition:all 1.0s;
+}
+
+
 /*---------------------------header---------------------------------*/
 header {
   height: 50px;
@@ -119,8 +165,18 @@ footer li {
 
 
 /*---------------------------signup---------------------------------*/
-
 .signup-wrapper {
-  margin-top: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sign-form {
+  margin:30px 0;
+}
+
+
+/*---------------------------profile--------------------------------*/
+.profile-wrapper {
+  margin-top: 100px;
 }
 

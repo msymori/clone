@@ -2,5 +2,29 @@
   <div class="container">
     <h1>Sign up</h1>
     <p>This will be a signup page for new users.</p>
+  <div class="sign-form">
+    <div class="form-group">
+      <%= form_for(@user) do |f| %>
+        <div class="control">
+          <p><%= f.label :name, class: "form-label" %></p>
+          <%= f.text_field :name, class: "form" %>
+        </div>
+        <div class="control">
+          <p><%= f.label :email, class: "form-label" %></p>
+          <%= f.email_field :email, class: "form" %>
+        </div>
+        <div class="control">
+          <p><%= f.label :passsword, class: "form-label" %></p>
+          <%= f.password_field :passsword, class: "form" %>
+        </div>
+        <div class="control">
+          <p><%= f.label :password_confirmation, "Confirmation", class: "form-label" %></p>
+          <%= f.password_field :password_confirmation, class: "form" %>
+        </div>
+        
+        <%= f.submit "Create", class: "btn btn-signup" %>
+      <% end %>
+    </div>
+  </div>
   </div>
 </div>
