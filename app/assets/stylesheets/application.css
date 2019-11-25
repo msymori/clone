@@ -192,6 +192,15 @@ footer li {
   text-align: center
 }
 
+/*---------------------------edit profile--------------------------------*/
+.edit-user-wrapper {
+  margin-top: 100px;
+  text-align: center
+}
+
+.gravatar_edit {
+  margin-top:50px;
+}
 
 /*---------------------------error---------------------------------*/
 .error-wrapper {
@@ -205,3 +214,22 @@ footer li {
   margin-top: 100px;
 }
 
+/*---------------------------top-wrapper--------------------------------*/
+.top-wrapper {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.user-show {
+  text-align: left;
+}
+
+.users {
+  list-style: none;
+  margin:0;
+}
+.users li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
