@@ -1,0 +1,18 @@
+<div class="password-reset-wrapper">
+  <div class="container">
+    <h1>Forgot Password</h1>
+    
+    <div class="forget-form">
+      <div class="form-group">
+        <%= form_for(:session, url: login_path) do |f| %>
+          <div class="control">
+            <p><%= f.label :email, class: "form-label" %></p>
+            <%= f.email_field :email, class: "form" %>
+          </div>
+          
+          <%= f.submit "Submit", class: "btn btn-login" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

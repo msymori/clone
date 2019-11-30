@@ -1,0 +1,27 @@
+<div class="password-reset-wrapper">
+  <div class="container">
+    <h1>Reset Password</h1>
+    
+    <div class="forget-form">
+      <div class="form-group">
+        <%= form_for(@user, url:password_reset_path(params[:id])) do |f| %>
+          <%= render 'shared/error_messages' %>
+          
+          <%= hidden_field_tag :email, @user.email %>
+          
+          <div class="control">
+            <p><%= f.label :password, class: "form-label" %></p>
+            <%= f.password_field :password, class: "form" %>
+          </div>
+          
+          <div class="control">
+            <p><%= f.label :password_confirmation, class: "form-label" %></p>
+            <p><%= f.password_field, :password_confirmation, class: "form" %></p>
+          </div>
+          
+          <%= f.submit "Update", class: "btn btn-login" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
